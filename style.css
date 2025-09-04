@@ -1,0 +1,96 @@
+body { 
+  font-family: Arial, sans-serif; 
+  position: relative; 
+  background-image: url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 16px; 
+  } 
+  body:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 131, 136, 0.3);
+  z-index: -1;
+}
+h1 { 
+  text-align: center;
+  color: #ffffff; 
+  font-size: 2.4em;
+  font-weight: 700;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  } 
+  .subtitle {
+    text-align: center; 
+     color: #f2f2f2;
+     font-size: 16px; 
+     text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    } 
+    form { 
+      background: rgba(255, 255, 255, 0.6);
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 35px 45px ; 
+      width: 100%; 
+      max-width: 500px; 
+      min-width: 300px;   
+      margin: auto;
+      padding-bottom: 20px; 
+    } 
+    label { 
+      display: block; 
+      align-items: center; 
+      margin-bottom: 7px; 
+      cursor: pointer; 
+      font-size: 16px; 
+      line-height: 3; 
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+      } 
+      input[type="text"], 
+      input[type="email"] { 
+        width: 100%; 
+        padding: 5px; 
+        margin-bottom: 20px; 
+        } 
+        input[type="number"] { 
+          width: 100% ; 
+          padding: 5px; 
+          } 
+          select { 
+            display: inline-block; 
+            margin-right: 20px; 
+            cursor: pointer; 
+            padding: 5px;
+          } 
+          input[type="radio"],
+          input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+            vertical-align: middle;
+            }
+          textarea { 
+            width:100%; 
+            max-width: 500px; 
+            font-size: 1em; 
+          } 
+          input[type="submit"] { 
+            background-color: rgba(14, 131, 136, 0.85) ;
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 1.2em; 
+            font-weight: bold; 
+            cursor: pointer; 
+            margin-top: 20px; 
+            display: block; 
+            width: 100% ; 
+            max-width: 500px; 
+            }
+            input[type="submit"]:hover {
+  background-color: #0B6264;
+  cursor: pointer;
+}  

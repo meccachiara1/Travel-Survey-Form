@@ -1,0 +1,40 @@
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>Travel Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">Next Stop: il tuo viaggio ideale</h1>
+      <p class="subtitle"  id="description">Dicci chi sei e dove vorresti viaggiare: creeremo esperienze su misura per te!</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">Nome:</label>
+        <input id="name" type="text" placeholder="Inserisci il tuo nome" required>
+        <label id="email-label" for="email">Email:</label>
+        <input id="email" type="email" placeholder="Inserisci la tua email" required>
+        <label id="number-label" for="number">Età:</label>
+        <input id="number" type="number" min="15" max="100" placeholder="Inserisci la tua età" required>
+        <label for="dropdown">Che tipo di viaggio preferisci?</label>
+        <select id="dropdown" name="trip-type">
+          <option value="">Seleziona un'opzione</option>
+          <option value="avventura">Avventura</option>
+          <option value="mare">Mare & Relax</option>
+          <option value="cultura">Cultura</option>
+          <option value="party">Party & Nightlife</option>
+          <option value="natura">Natura</option>
+          </select>
+          <label>Di solito viaggi:</label>
+          <label><input type="radio" name="travel-style" value="solo">Da solo</label>
+          <label><input type="radio" name="travel-style" value="con partner">Con partner</label>
+          <label><input type="radio" name="travel-style" value="con amici">Con amici</label>
+          <label><input type="radio" name="travel-style" value="con gruppi organizzati">Con gruppi organizzati</label>
+          <label>Come preferisci prenotare i viaggi?</label>
+          <label><input type="checkbox" name="channel" value="online">Online (fai-da-te)</label>
+          <label><input type="checkbox" name="channel" value="agenzie">Agenzie di viaggio fisiche</label>
+          <label for="comments">Hai un viaggio dei sogni o un'idea che vuoi condividere?</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Scrivilo qui..."></textarea>
+           <input id="submit" type="submit" value="Invia il sondaggio">
+  </form>
+</body>
+</html>
