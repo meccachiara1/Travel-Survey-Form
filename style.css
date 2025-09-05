@@ -10,14 +10,15 @@ body {
   } 
   body:before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  /* ECCO IL CAMBIO CHIAVE: */
   height: 100%;
-  min-height: 100vh;
   background: rgba(14, 131, 136, 0.3);
   z-index: -1;
+  pointer-events: none;
 }
 @media (max-width: 768px) {
   body:before {
@@ -101,3 +102,6 @@ h1 {
   background-color: #0B6264;
   cursor: pointer;
 }  
+html, body {
+  height: 100%;
+}
